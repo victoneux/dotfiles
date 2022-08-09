@@ -5,3 +5,4 @@ ln -sf ~/hyprland_dotfiles/rofi/ ~/.config/
 ln -sf ~/hyprland_dotfiles/kitty/ ~/.config/
 ln -sf ~/hyprland_dotfiles/hypr/ ~/.config/
 ln -sf ~/hyprland_dotfiles/waybar ~/.config/
+ln -sf ~/hyprland_dotfiles/scripts ~/.config/
