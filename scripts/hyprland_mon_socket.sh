@@ -6,7 +6,7 @@ function handle {
 		len=${#new}
 		new="${new::length-3}"
 		echo $new > /tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/active_monitor_2
-		monitor_response=$(hyprctl monitors | grep $new)
+		monitor_response=$(hyprctl monitors | grep "r $new")
 		len2=${#monitor_response}
 		mon_id="${monitor_response:length-3}"
 		mon_id="${mon_id::1}"
