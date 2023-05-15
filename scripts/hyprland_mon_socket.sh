@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo /tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/active_monitor > 0
+
 function handle {
 	if [[ ${1:0:10} == "focusedmon" ]]; then
 		new="${1:12}"
@@ -11,7 +13,9 @@ function handle {
 		mon_id="${monitor_response:length-3}"
 		mon_id="${mon_id::1}"
 		echo $mon_id > /tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/active_monitor
+	elif [[ ${1:0:12} == "monitoradded" ]]; then
+		$HOME/.config/scripts/multimon/init.sh
 	fi
 }
 
-socat - UNIX-CONNECT:/tmp/hypr/$(echo $HYPRLAND_INSTANCE_SIGNATURE)/.socket2.sock | while read line; do handle $line; done
+socat -t 86400 - UNIX-CONNECT:/tmp/hypr/$(echo $HYPRLAND_INSTANCE_SIGNATURE)/.socket2.sock | while read line; do handle $line; done

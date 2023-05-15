@@ -1,0 +1,21 @@
+* {
+    all: unset;
+    color: #cdd6f4;
+    font-family: "Noto";
+    font-size: 15;
+    font-weight: bold;
+}
+
+.bar {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.time {
+    background: linear-gradient(#11111b, #11111b) padding-box, linear-gradient(to top, #89b4fa, #f5e0dc) border-box;
+    border-radius: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 3px;
+    border: 3px solid transparent;
+}

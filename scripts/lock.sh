@@ -1,0 +1,26 @@
+swaylock \
+	--image ~/.config/hypr/lock.png \
+	--indicator-radius 30 \
+	--indicator-y-position 850 \
+	--indicator-thickness 10 \
+	--inside-color ffffff00 \
+	--inside-clear-color ffffff00 \
+	--indicator-idle-visible \
+	--line-color 99d1db \
+	--line-clear-color a5adce \
+	--line-caps-lock-color e5c890 \
+	--line-ver-color ca9ee6 \
+	--line-wrong-color e78284 \
+	--ring-color 838ba7 \
+	--ring-clear-color 737994 \
+	--ring-caps-lock-color 838ba7 \
+	--text-color c6d0f5 \
+	--text-clear-color c6d0f5 \
+	--text-caps-lock-color c6d0f5 \
+	--text-ver-color c6d0f5 \
+	--text-wrong-color ea999c \
+	--separator-color f2d5cf \
+	--bs-hl-color ca9ee6 \
+	--caps-lock-bs-hl-color ca9ee6 \
+	--caps-lock-key-hl-color a6d189 \
+	--key-hl-color a6d189

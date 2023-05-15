@@ -1,0 +1,23 @@
+(defwidget time []
+    (box
+        :orientation "h"
+        :class "time"
+        :halign "end"
+        :overflow "hidden"
+        time_poll
+    )
+)
+(defpoll time_poll :interval "1s" "date '+%I:%M %p'")
+
+(defwidget bar []
+    (box
+        :orientation "h"
+        :vexpand "false"
+        :hexpand "false"
+        :class "bar"
+        (time)
+    )
+)
+
+(defwindow bar0 :geometry (geometry :x "10" :y "10" :height "42px" :width "100%" :anchor "top center" ) :monitor 0 :exclusive "true" :wm-ignore "false" :windowtype "dock" :stacking "fg" (bar) )
+(defwindow bar1 :geometry (geometry :x "10" :y "10" :height "42px" :width "100%" :anchor "top center" ) :monitor 1 :exclusive "true" :wm-ignore "false" :windowtype "dock" :stacking "fg" (bar) )

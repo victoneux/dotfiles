@@ -1,0 +1,21 @@
+(defwidget time []
+    (box
+        :orientation "h"
+        :class "time"
+        :halign "end"
+        :overflow "hidden"
+        time_poll
+    )
+)
+(defpoll time_poll :interval "1s" "date '+%I:%M %p'")
+
+(defwidget bar []
+    (box
+        :orientation "h"
+        :vexpand "false"
+        :hexpand "false"
+        :class "bar"
+        (time)
+    )
+)
+
