@@ -15,5 +15,5 @@ for id in $ids; do
     id_count=$(($id_count+1))
 done
 
-$HOME/.config/scripts/multimon/eww.sh $id_count
-$HOME/.config/scripts/multimon/wallpaper.sh
+$HOME/.config/scripts/init_scripts/eww.sh $id_count
+$HOME/.config/scripts/init_scripts/wallpaper.sh
