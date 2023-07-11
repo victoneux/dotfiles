@@ -1,7 +1,6 @@
 swaylock \
 	--image ~/.config/hypr/lock.png \
 	--indicator-radius 30 \
-	--indicator-y-position 850 \
 	--indicator-thickness 10 \
 	--inside-color ffffff00 \
 	--inside-clear-color ffffff00 \
