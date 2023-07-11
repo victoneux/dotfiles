@@ -1,6 +1,8 @@
 #!/bin/sh
 
-echo /tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/active_monitor > 0
+echo 0 > /tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/active_monitor
+echo $(hyprctl monitors | head -n 1 | cut -d ' ' -f 2) > /tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/active_monitor_2
+
 
 function handle {
 	if [[ ${1:0:10} == "focusedmon" ]]; then

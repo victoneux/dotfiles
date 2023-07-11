@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 /home/victoneux/.config/wallpapers/clouds.png
+=======
+/home/victoneux/.config/wallpapers/launch.png
+>>>>>>> main
