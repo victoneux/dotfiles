@@ -15,5 +15,8 @@ for id in $ids; do
     id_count=$(($id_count+1))
 done
 
+touch $HOME/.config/hypr/multimon.conf
+touch $HOME/.config/scripts/wallpaper/wpsave.txt
+
 $HOME/.config/scripts/init_scripts/eww.sh $id_count
 $HOME/.config/scripts/init_scripts/wallpaper.sh

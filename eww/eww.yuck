@@ -48,3 +48,4 @@
 )
 
 (defwindow bar0 :geometry (geometry :x "10" :y "10" :height "42px" :width "100%" :anchor "top center" ) :monitor 0 :exclusive "true" :wm-ignore "false" :windowtype "dock" :stacking "fg" (bar) )
+(defwindow bar1 :geometry (geometry :x "10" :y "10" :height "42px" :width "100%" :anchor "top center" ) :monitor 1 :exclusive "true" :wm-ignore "false" :windowtype "dock" :stacking "fg" (bar) )
