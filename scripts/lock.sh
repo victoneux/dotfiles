@@ -1,5 +1,5 @@
 swaylock \
-	--image ~/.config/hypr/lock.png \
+	--image $(cat ~/.config/scripts/wallpaper/wpsave.txt) \
 	--indicator-radius 30 \
 	--indicator-thickness 10 \
 	--inside-color ffffff00 \
