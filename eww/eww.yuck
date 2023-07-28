@@ -24,7 +24,7 @@
     )
 )
 
-(defpoll player_poll :interval "1s" "echo $(playerctl metadata --format '{{xesam:artist}} // {{xesam:title}}')")
+(defpoll player_poll :interval "0.05s" "echo $(playerctl metadata --format '{{xesam:artist}} // {{xesam:title}}')")
 
 (defwidget left []
     (box
