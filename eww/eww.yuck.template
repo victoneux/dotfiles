@@ -16,6 +16,16 @@
 )
 (defpoll network_poll :interval "1s" "echo 󰓤 $(nmcli -t -f NAME con show --active | head -n 1)")
 
+(defwidget player []
+    (box
+        :orientation "h"
+        :class "text_widget"
+        player_poll
+    )
+)
+
+(defpoll player_poll :interval "1s" "echo $(playerctl metadata --format '{{xesam:artist}} // {{xesam:title}}')")
+
 (defwidget left []
     (box
         :orientation "h"
@@ -24,6 +34,17 @@
         :spacing 10
         :space-evenly false
         (network)
+    )
+)
+
+(defwidget center []
+    (box
+        :orientation "h"
+        :class "center"
+        :halign "center"
+        :spacing 10
+        :space-evenly false
+        (player)
     )
 )
 
@@ -43,7 +64,8 @@
         :orientation "h"
         :class "bar"
         (left)
-        (right)
+ 	(center)
+ 	(right)
     )
 )
 
