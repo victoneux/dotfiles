@@ -13,7 +13,7 @@ case $selection in
         ~/.config/scripts/lock.sh
         ;;
     󰿅)
-        hyprctl kill
+        pkill Hyprland
         ;;
 esac
 
