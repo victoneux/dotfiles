@@ -1,16 +1,19 @@
-options=("Poweroff" "Reboot" "Lock")
+options=("󰤆" "" "󰌾" "󰿅")
 selection=$(rofi -dmenu -theme power.rasi <<< $(printf '%s\n' "${options[@]}"))
 
 case $selection in
 
-    Poweroff)
+    󰤆)
         systemctl poweroff
         ;;
-    Reboot)
+    )
         systemctl reboot
         ;;
-    Lock)
+    󰌾)
         ~/.config/scripts/lock.sh
+        ;;
+    󰿅)
+        hyprctl kill
         ;;
 esac
 
