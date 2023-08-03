@@ -24,7 +24,9 @@
     )
 )
 
-(defpoll player_poll :interval "1s" "echo $(playerctl metadata --format '{{xesam:artist}} // {{xesam:title}}')")
+
+
+(defpoll player_poll :interval "1s" "echo $(~/.config/scripts/songnameparse.sh)")
 
 (defwidget left []
     (box
