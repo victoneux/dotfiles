@@ -24,9 +24,7 @@
     )
 )
 
-
-
-(defpoll player_poll :interval "1s" "echo $(~/.config/scripts/songnameparse.sh)")
+(defpoll player_poll :interval ".1s" "echo $(~/.config/scripts/audiopoll.sh)")
 
 (defwidget left []
     (box
