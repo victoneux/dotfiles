@@ -25,18 +25,22 @@ bar_format="
             :class \"left\"
             :halign \"start\"
             :spacing 10
+            :space-evenly false
             (network)
+            (volume)
         )
         (box
             :class \"center\"
             :halign \"center\"
             :spacing 10
+            :space-evenly false
             (player)
         )
         (box
             :class \"right\"
             :halign \"end\"
             :spacing 10
+            :space-evenly false
             $(if [[ -f '/sys/class/power_supply/BAT0/status' ]]; then echo "(battery)"; fi)
             (time)
         )
