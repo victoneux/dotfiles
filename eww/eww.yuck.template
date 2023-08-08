@@ -26,46 +26,12 @@
 
 (defpoll player_poll :interval ".1s" "echo $(~/.config/scripts/audiopoll.sh)")
 
-(defwidget left []
+(defwidget battery []
     (box
         :orientation "h"
-        :class "left"
-        :halign "start"
-        :spacing 10
-        :space-evenly false
-        (network)
+        :class "text_widget"
+        battery_poll
     )
 )
 
-(defwidget center []
-    (box
-        :orientation "h"
-        :class "center"
-        :halign "center"
-        :spacing 10
-        :space-evenly false
-        (player)
-    )
-)
-
-(defwidget right []
-    (box
-        :orientation "h"
-        :class "right"
-        :halign "end"
-        :spacing 10
-        :space-evenly false
-        (time)
-    )
-)
-
-(defwidget bar []
-    (box
-        :orientation "h"
-        :class "bar"
-        (left)
- 	(center)
- 	(right)
-    )
-)
-
+(defpoll battery_poll :interval "1s" "echo $(~/.config/scripts/batterypoll.sh)")

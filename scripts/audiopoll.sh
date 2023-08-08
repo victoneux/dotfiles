@@ -13,7 +13,7 @@ musicinfo=""
 
 for word in "${playerinput[@]}"; do
 	temp=$musicinfo$word
-	if [ ${#temp} -lt 30 ]; then
+	if [ ${#temp} -lt 60 ]; then
 		musicinfo=$musicinfo" "$word
 	else
 		musicinfo+="..."
