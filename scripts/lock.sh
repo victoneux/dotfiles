@@ -2,6 +2,8 @@ swaylock \
 	--image ~/.config/scripts/wallpaper/lock.png \
 	--indicator-radius 30 \
 	--indicator-thickness 10 \
+	--indicator-idle-visible \
+	--ignore-empty-password \
 	\
 	--inside-color ffffff00 \
 	--inside-clear-color ffffff00 \
