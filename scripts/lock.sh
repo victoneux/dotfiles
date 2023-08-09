@@ -1,24 +1,26 @@
 swaylock \
-	--image $(cat ~/.config/scripts/wallpaper/wpsave.txt) \
+	--image ~/.config/scripts/wallpaper/lock.png \
 	--indicator-radius 30 \
 	--indicator-thickness 10 \
+	\
 	--inside-color ffffff00 \
 	--inside-clear-color ffffff00 \
-	--indicator-idle-visible \
-	--line-color 99d1db \
-	--line-clear-color a5adce \
-	--line-caps-lock-color e5c890 \
-	--line-ver-color ca9ee6 \
-	--line-wrong-color e78284 \
-	--ring-color 838ba7 \
-	--ring-clear-color 737994 \
-	--ring-caps-lock-color 838ba7 \
-	--text-color c6d0f5 \
-	--text-clear-color c6d0f5 \
-	--text-caps-lock-color c6d0f5 \
-	--text-ver-color c6d0f5 \
-	--text-wrong-color ea999c \
-	--separator-color f2d5cf \
+	--inside-caps-lock-color ffffff00 \
+	--inside-wrong-color ffffff00 \
+	--line-color 585b70 \
+	--line-clear-color 89dceb \
+	--line-caps-lock-color 585b70 \
+	--line-ver-color 585b70 \
+	--line-wrong-color f38ba8 \
+	--ring-color 1e1e2e \
+	--ring-clear-color 1e1e2e \
+	--ring-caps-lock-color 1e1e2e \
+	--text-color ffffff00 \
+	--text-clear-color ffffff00 \
+	--text-caps-lock-color ffffff00 \
+	--text-ver-color ffffff00 \
+	--text-wrong-color ffffff00 \
+	--separator-color 585b70 \
 	--bs-hl-color ca9ee6 \
 	--caps-lock-bs-hl-color ca9ee6 \
 	--caps-lock-key-hl-color a6d189 \
