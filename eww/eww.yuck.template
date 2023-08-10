@@ -6,7 +6,7 @@
         time_poll
     )
 )
-(defpoll time_poll :interval "1s" "echo 󱑒 $(date '+%I:%M %p')")
+(defpoll time_poll :interval "1s" "echo $(~/.config/scripts/polls/timepoll.sh)")
 
 (defwidget network []
     (box
