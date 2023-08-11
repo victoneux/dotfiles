@@ -13,7 +13,7 @@ else
 	hour_test=$hour
 fi
 
-if [[ $hour_test == "0" ]] || [[ $hour_test == "12" ]]; then
+if [[ $hour_test == "00" ]] || [[ $hour_test == "12" ]]; then
 	clock="󱑖"
 elif [[ $hour_test == "1" ]] || [[ $hour_test == "13" ]]; then
 	clock="󱑋"
