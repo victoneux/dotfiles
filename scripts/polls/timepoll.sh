@@ -13,6 +13,8 @@ else
 	hour_test=$hour
 fi
 
+printf -v hour_test "%02d" $hour_test
+
 if [[ $hour_test == "00" ]] || [[ $hour_test == "12" ]]; then
 	clock="󱑖"
 elif [[ $hour_test == "01" ]] || [[ $hour_test == "13" ]]; then
