@@ -39,4 +39,4 @@ function handle {
 	esac
 }
 
-socat -t 86400 - UNIX-CONNECT:/tmp/hypr/$(echo $HYPRLAND_INSTANCE_SIGNATURE)/.socket2.sock | while read -r line; do handle "$line"; done
+socat -t 86400 -U - UNIX-CONNECT:/tmp/hypr/$(echo $HYPRLAND_INSTANCE_SIGNATURE)/.socket2.sock | while read -r line; do handle "$line"; done
