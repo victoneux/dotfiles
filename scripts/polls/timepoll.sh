@@ -4,8 +4,11 @@ hour=$(date '+%H')
 minute=$(date '+%M')
 clock=""
 
-if (( $minute < 30 )); then
+if (( $minute > 30 )); then
 	hour_test=$(($hour+1))
+	if (( $hour_test > 23 )); then
+		hour_test=0
+	fi
 else
 	hour_test=$hour
 fi
