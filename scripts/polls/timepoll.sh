@@ -15,23 +15,23 @@ fi
 
 if [[ $hour_test == "00" ]] || [[ $hour_test == "12" ]]; then
 	clock="󱑖"
-elif [[ $hour_test == "1" ]] || [[ $hour_test == "13" ]]; then
+elif [[ $hour_test == "01" ]] || [[ $hour_test == "13" ]]; then
 	clock="󱑋"
-elif [[ $hour_test == "2" ]] || [[ $hour_test == "14" ]]; then
+elif [[ $hour_test == "02" ]] || [[ $hour_test == "14" ]]; then
 	clock="󱑌"
-elif [[ $hour_test == "3" ]] || [[ $hour_test == "15" ]]; then
+elif [[ $hour_test == "03" ]] || [[ $hour_test == "15" ]]; then
 	clock="󱑍"
-elif [[ $hour_test == "4" ]] || [[ $hour_test == "16" ]]; then
+elif [[ $hour_test == "04" ]] || [[ $hour_test == "16" ]]; then
 	clock="󱑎"
-elif [[ $hour_test == "5" ]] || [[ $hour_test == "17" ]]; then
+elif [[ $hour_test == "05" ]] || [[ $hour_test == "17" ]]; then
 	clock="󱑏"
-elif [[ $hour_test == "6" ]] || [[ $hour_test == "18" ]]; then
+elif [[ $hour_test == "06" ]] || [[ $hour_test == "18" ]]; then
 	clock="󱑐"
-elif [[ $hour_test == "7" ]] || [[ $hour_test == "19" ]]; then
+elif [[ $hour_test == "07" ]] || [[ $hour_test == "19" ]]; then
 	clock="󱑑"
-elif [[ $hour_test == "8" ]] || [[ $hour_test == "20" ]]; then
+elif [[ $hour_test == "08" ]] || [[ $hour_test == "20" ]]; then
 	clock="󱑒"
-elif [[ $hour_test == "9" ]] || [[ $hour_test == "21" ]]; then
+elif [[ $hour_test == "09" ]] || [[ $hour_test == "21" ]]; then
 	clock="󱑓"
 elif [[ $hour_test == "10" ]] || [[ $hour_test == "22" ]]; then
 	clock="󱑔"
