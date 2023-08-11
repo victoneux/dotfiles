@@ -4,29 +4,35 @@ hour=$(date '+%H')
 minute=$(date '+%M')
 clock=""
 
-if [[ $hour == "0" ]] || [[ $hour == "12" ]]; then
+if (( $minute < 30 )); then
+	hour_test=$(($hour+1))
+else
+	hour_test=$hour
+fi
+
+if [[ $hour_test == "0" ]] || [[ $hour_test == "12" ]]; then
 	clock="󱑖"
-elif [[ $hour == "1" ]] || [[ $hour == "13" ]]; then
+elif [[ $hour_test == "1" ]] || [[ $hour_test == "13" ]]; then
 	clock="󱑋"
-elif [[ $hour == "2" ]] || [[ $hour == "14" ]]; then
+elif [[ $hour_test == "2" ]] || [[ $hour_test == "14" ]]; then
 	clock="󱑌"
-elif [[ $hour == "3" ]] || [[ $hour == "15" ]]; then
+elif [[ $hour_test == "3" ]] || [[ $hour_test == "15" ]]; then
 	clock="󱑍"
-elif [[ $hour == "4" ]] || [[ $hour == "16" ]]; then
+elif [[ $hour_test == "4" ]] || [[ $hour_test == "16" ]]; then
 	clock="󱑎"
-elif [[ $hour == "5" ]] || [[ $hour == "17" ]]; then
+elif [[ $hour_test == "5" ]] || [[ $hour_test == "17" ]]; then
 	clock="󱑏"
-elif [[ $hour == "6" ]] || [[ $hour == "18" ]]; then
+elif [[ $hour_test == "6" ]] || [[ $hour_test == "18" ]]; then
 	clock="󱑐"
-elif [[ $hour == "7" ]] || [[ $hour == "19" ]]; then
+elif [[ $hour_test == "7" ]] || [[ $hour_test == "19" ]]; then
 	clock="󱑑"
-elif [[ $hour == "8" ]] || [[ $hour == "20" ]]; then
+elif [[ $hour_test == "8" ]] || [[ $hour_test == "20" ]]; then
 	clock="󱑒"
-elif [[ $hour == "9" ]] || [[ $hour == "21" ]]; then
+elif [[ $hour_test == "9" ]] || [[ $hour_test == "21" ]]; then
 	clock="󱑓"
-elif [[ $hour == "10" ]] || [[ $hour == "22" ]]; then
+elif [[ $hour_test == "10" ]] || [[ $hour_test == "22" ]]; then
 	clock="󱑔"
-elif [[ $hour == "11" ]] || [[ $hour == "23" ]]; then
+elif [[ $hour_test == "11" ]] || [[ $hour_test == "23" ]]; then
 	clock="󱑕"
 else
 	clock="NO"
