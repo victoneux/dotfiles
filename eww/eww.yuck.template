@@ -14,7 +14,7 @@
         date_poll
     )
 )
-(defpoll date_poll :interval "1s" "echo $(date +'%h %d')")
+(defpoll date_poll :interval "1s" "echo  $(date +'%h %d')")
 
 (defwidget network []
     (box
