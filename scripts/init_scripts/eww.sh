@@ -42,6 +42,7 @@ bar_format="
             :spacing 10
             :space-evenly false
             $(if [[ -f '/sys/class/power_supply/BAT0/status' ]]; then echo "(battery)"; fi)
+            (date)
             (time)
         )
     )

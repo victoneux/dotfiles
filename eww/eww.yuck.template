@@ -8,6 +8,14 @@
 )
 (defpoll time_poll :interval "1s" "echo $(~/.config/scripts/polls/timepoll.sh)")
 
+(defwidget date []
+    (box
+        :class "text_widget"
+        date_poll
+    )
+)
+(defpoll date_poll :interval "1s" "echo $(date +'%h %d')")
+
 (defwidget network []
     (box
         :class "text_widget"
