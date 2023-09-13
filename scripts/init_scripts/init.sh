@@ -15,6 +15,8 @@ for id in $ids; do
     id_count=$(($id_count+1))
 done
 
+echo $id_count > /tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/mon_count
+
 touch $HOME/.config/hypr/multimon.conf
 touch $HOME/.config/scripts/wallpaper/wpsave.txt
 
