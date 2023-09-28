@@ -5,7 +5,10 @@ bar_format="
 (defwidget workspacesMON []
     (box
         :class \"text_widget\"
-        workspaces_pollMON
+	(box
+		:class \"internal_box\"
+		workspaces_pollMON
+	)
     )
 )
 

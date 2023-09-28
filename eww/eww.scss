@@ -19,3 +19,13 @@
     border-width: 3px;
     border: 3px solid transparent;
 }
+
+.internal_box {
+    background: linear-gradient(#45475a, #313244) padding-box, linear-gradient(to top, #f9e2af, #a6e3a1) border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
