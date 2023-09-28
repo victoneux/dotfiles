@@ -28,7 +28,11 @@
     (box
         :visible show_player
         :class "text_widget"
-        player_listener
+        (label
+            :text player_listener
+            :limit-width 50
+            :show-truncated true
+        )
     )
 )
 (deflisten player_listener :initial '' '~/.config/scripts/listeners/audiolisten.sh')
