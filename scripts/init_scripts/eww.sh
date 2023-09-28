@@ -2,16 +2,25 @@ mon_count=$1
 
 bar_format="
 
-(defwindow bar%s
+(defwidget workspacesMON []
+    (box
+        :class \"text_widget\"
+        workspaces_pollMON
+    )
+)
+
+(defpoll workspaces_pollMON :interval \".1s\" \"echo \$(~/.config/scripts/polls/workspacespoll.sh MP1)\")
+
+(defwindow barMON
     :geometry
         (geometry
             :x \"10\"
             :y \"10\"
             :height \"42px\"
-            :width \"100%%\"
+            :width \"100%\"
             :anchor \"top center\"
         )
-    :monitor %s
+    :monitor MON
     :exclusive \"true\"
     :wm-ignore \"false\"
     :windowtype \"dock\"
@@ -28,6 +37,7 @@ bar_format="
             :space-evenly false
             (network)
             (volume)
+            (workspacesMON)
         )
         (box
             :class \"center\"
@@ -56,7 +66,7 @@ cp $HOME/.config/eww/eww.yuck.template $HOME/.config/eww/eww.yuck
 
 for ((i=0; i<mon_count; i++))
 do
-    echo $(printf "$bar_format" "$i" "$i") >> "$HOME/.config/eww/eww.yuck"
+    echo $(echo $bar_format | sed "s/MON/$i/g" | sed "s/MP1/$(($i+1))/g") >> "$HOME/.config/eww/eww.yuck"
 done
 
 eww daemon
