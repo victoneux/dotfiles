@@ -7,4 +7,4 @@ function handle {
     echo $1
 }
 
-playerctl --follow metadata --format '{{xesam:artist}} // {{xesam:title}}' | while read -r line; do handle "$line"; done
+playerctl --follow metadata --player=spotify --format '{{xesam:artist}} // {{xesam:title}}' | while read -r line; do handle "$line"; done
