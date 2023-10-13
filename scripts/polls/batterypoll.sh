@@ -1,19 +1,17 @@
 status=$(cat /sys/class/power_supply/BAT0/status)
-energy_now=$(cat /sys/class/power_supply/BAT0/energy_now)
-energy_full=$(cat /sys/class/power_supply/BAT0/energy_full)
-percent=$(awk "BEGIN { print(int(($energy_now/$energy_full)*100)) }")
+percent=$(acpi | grep -o "[0-9]*%")
 
 case $status in
     "Full")
-        echo "󱟢 $percent%"
+        echo "󱟢 $percent"
         ;;
     "Charging")
-        echo "󰂄 $percent%"
+        echo "󰂄 $percent"
         ;;
     "Discharging")
-        echo "󱟤 $percent%"
+        echo "󱟤 $percent"
         ;;
     "Not charging")
-        echo "󰁿 $percent%"
+        echo "󰁿 $percent"
         ;;
 esac
