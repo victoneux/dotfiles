@@ -20,5 +20,5 @@ echo $id_count > /tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/mon_count
 touch $HOME/.config/hypr/multimon.conf
 touch $HOME/.config/scripts/wallpaper/wpsave.txt
 
-$HOME/.config/scripts/init_scripts/eww.sh $id_count
-$HOME/.config/scripts/init_scripts/wallpaper.sh
+$HOME/.config/scripts/init/eww.sh $id_count
+$HOME/.config/scripts/init/wallpaper.sh
