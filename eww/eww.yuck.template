@@ -28,7 +28,8 @@
 (defwidget player []
     (box
         :visible show_player
-        :class "text_widget"
+        :class "text_widget music"
+        :width 700
         (label
             :text player_listener
             :limit-width 50
@@ -60,7 +61,7 @@
         :onhover "eww update show_menu=true"
         :onhoverlost "eww update show_menu=false"
         (box
-            :class "text_widget"
+            :class "text_widget extra_padding_left"
             :vexpand "false"
             :hexpand "false"
             :space-evenly "false"
