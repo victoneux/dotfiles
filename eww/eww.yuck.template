@@ -53,3 +53,12 @@
 )
 
 (defpoll battery_poll :interval "1s" "echo $(~/.config/scripts/polls/batterypoll.sh)")
+
+(defwidget start []
+    (button
+	:class "start_button crust far_left"
+	:timeout "200ms"
+	:onclick ""
+	""
+    )
+)

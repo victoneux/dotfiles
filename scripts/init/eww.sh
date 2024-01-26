@@ -54,7 +54,7 @@ bar_format="
             :halign \"start\"
             :spacing 10
             :space-evenly false
-            (network)
+            (start)
             (volume)
             (workspacesMON)
         )

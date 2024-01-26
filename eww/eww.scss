@@ -46,6 +46,16 @@ $crust: #11111b;
     padding-right: 20px;
 }
 
+.start_button {
+    color: $sapphire;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.start_button:hover {
+    color: $red;
+}
+
 .active_workspace {
     background: none;
     margin-left: 3;
@@ -61,4 +71,13 @@ $crust: #11111b;
     margin-right: 3;
     padding-left: 0;
     padding-right: 0;
+}
+
+.crust {
+    background: $crust;
+    border-radius: 12px 8px 8px 12px;
+}
+
+.far_left {
+    border-radius: 12px 8px 8px 12px;
 }
