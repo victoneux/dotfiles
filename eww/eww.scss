@@ -42,8 +42,8 @@ $crust: #11111b;
 }
 
 .text_widget {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .start_button {
@@ -73,11 +73,9 @@ $crust: #11111b;
     padding-right: 0;
 }
 
-.crust {
-    background: $crust;
-    border-radius: 12px 8px 8px 12px;
+.red {
+    color: $red;
 }
-
-.far_left {
-    border-radius: 12px 8px 8px 12px;
+.red:hover {
+    color: $yellow;
 }

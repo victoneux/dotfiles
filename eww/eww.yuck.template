@@ -1,4 +1,5 @@
 (defvar show_player false)
+(defvar show_menu false)
 
 (defwidget time []
     (box
@@ -55,10 +56,47 @@
 (defpoll battery_poll :interval "1s" "echo $(~/.config/scripts/polls/batterypoll.sh)")
 
 (defwidget start []
-    (button
-	:class "start_button crust far_left"
-	:timeout "200ms"
-	:onclick ""
-	""
+    (eventbox
+        :onhover "eww update show_menu=true"
+        :onhoverlost "eww update show_menu=false"
+        (box
+            :class "text_widget"
+            :vexpand "false"
+            :hexpand "false"
+            :space-evenly "false"
+            (button
+                :class "red"
+                :timeout "200ms"
+                :onclick ""
+                ""
+            )
+            (revealer
+                :transition "slideright"
+                :reveal show_menu
+                :duration "500ms"
+                :class "text_widget"
+                (box
+                    :spacing 10
+                    (button
+                        :class "red"
+                        :timeout "200ms"
+                        :onclick ""
+                        "󰀻"
+                    )
+                    (button
+                        :class "red"
+                        :timeout "200ms"
+                        :onclick ""
+                        "󰸉"
+                    )
+                    (button
+                        :class "red"
+                        :timeout "200ms"
+                        :onclick ""
+                        "󰐥"
+                    )
+                )
+            )
+        )
     )
 )
