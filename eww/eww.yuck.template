@@ -3,7 +3,7 @@
 
 (defwidget time []
     (box
-        :class "text_widget"
+        :class "text_widget extra_padding_right"
         time_poll
     )
 )

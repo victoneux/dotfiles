@@ -1,8 +1,6 @@
 playerinput=$(playerctl metadata --format '{{xesam:artist}} // {{xesam:title}}')
 
-info=$(~/.config/scripts/stringshorten.sh "$playerinput" 70)
-
-if [[ $info != "" ]]; then
+if [[ $playerinput != "" ]]; then
 	echo $info
 	eww update show_player=true
 else
