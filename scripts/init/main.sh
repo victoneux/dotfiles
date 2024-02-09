@@ -1,3 +1,5 @@
+
+$HOME/.config/scripts/init/wallpaper.sh
 monitors=$(hyprctl monitors -j)
 
 ids=$(echo $monitors | jq -r '.[].id')
@@ -21,4 +23,3 @@ touch $HOME/.config/hypr/multimon.conf
 touch $HOME/.config/scripts/wallpaper/wpsave.txt
 
 $HOME/.config/scripts/init/eww.sh $id_count
-$HOME/.config/scripts/init/wallpaper.sh
