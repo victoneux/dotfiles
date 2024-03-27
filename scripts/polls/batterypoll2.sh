@@ -3,15 +3,15 @@ percent=$(acpi | grep "Battery 0" | grep -o "[0-9]*%")
 
 case $status in
     "Full")
-        echo "󱟢 $percent"
+        echo "󱟢"
         ;;
     "Charging")
-        echo "󰂄 $percent"
+        echo "󰂄"
         ;;
     "Discharging")
-        echo "󱟤 $percent"
+        echo "󱟤"
         ;;
     "Not charging")
-        echo "󰁿 $percent"
+        echo "󰁿"
         ;;
 esac

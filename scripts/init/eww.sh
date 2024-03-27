@@ -54,8 +54,6 @@ bar_format="
             :halign \"start\"
             :spacing 10
             :space-evenly false
-            (start)
-            (volume)
             (workspacesMON)
         )
         (box
@@ -70,6 +68,7 @@ bar_format="
             :halign \"end\"
             :spacing 10
             :space-evenly false
+            (volume)
             $(if [[ -f '/sys/class/power_supply/BAT0/status' ]]; then echo "(battery)"; fi)
             (date)
             (time)
